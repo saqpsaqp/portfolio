@@ -30,7 +30,7 @@ header .text {
 	min-height: 400px;
 	height: 100vh;	
 }
-header a.btn {
+header #buttonHeader {
 	width: 150px;
 	border-radius: 0px;
 }

@@ -44,10 +44,10 @@
                 </div>
                 <div class="text col-xs-12 col-sm-6">
                     <div class="vertical-align">
-                    <h1>Saúl Quintero</h1>
-                    <h3>Ingeniero en Informática</h3>
-                    <h4>SysAdmin & Full-Stack Web-Developer orientado a soluciones.</h4>
-                    <a href="#saul" class="btn btn-danger">Ir</a>
+                        <h1>Saúl Quintero</h1>
+                        <h3>Ingeniero en Informática</h3>
+                        <h4>SysAdmin & Full-Stack Web-Developer orientado a soluciones.</h4>
+                        <a id="buttonHeader" href="#saul" class="btn btn-danger">¿Quieres saber más?</a>
                     </div>
                 </div>
             </div>
@@ -67,11 +67,11 @@
                     <h3>www.servergeneral.com</h3>
                 </div>
                 <div class="col-md-4">
-                    <img src="img/kms-sg.png"  class="img-responsive" alt="">
+                    <img src="img/kms-sg.png" class="img-responsive" alt="">
                     <h3>kms.servergeneral.com</h3>
                 </div>
                 <div class="col-md-4">
-                    <img src="img/endanza.png"  class="img-responsive" alt="">
+                    <img src="img/endanza.png" class="img-responsive" alt="">
                     <h3>www.endanzatachira.org.ve</h3>
                 </div>
             </div>
@@ -111,29 +111,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script type="text/javascript">
-		$(document).ready(function(){
-			//nos desplazamos entre todos los divs
-			$('a.ancla').click(function(e){
-			e.preventDefault();
-		    enlace  = $(this).attr('href');
-		    $('html, body').animate({
-		        scrollTop: $(enlace).offset().top
-		    }, 1000);
-			});
-			//vamos al principio o al final de la página
-			$('a.arriba').click(function(e){
-			e.preventDefault();
-		    volver  = $(this).attr('href');
-		    $('html, body').animate({
-		        scrollTop: $(volver).offset().top
-		    }, 2000);
-			});
-			//pasando la cantidad de pixeles que queremos a scrollTop
-			$('.prueba').click(function(){
-				$('html, body').animate({scrollTop:100}, 2000); return false;
-			});
-		});
-		</script>
+        $(document).on("ready", function () {
+            window.alert("hola");
+            $("#buttonHeader").on("click", function () {
+                
+                $("html,body").animate({ scrollTop: $("#saul").offset().top }, 1500);
+            });
+        });
+    </script>
 </body>
 
 </html>
