@@ -38,14 +38,17 @@
     </nav>
     <header id="home">
         <div class="container">
-            <div class="row vertical-center">
-                <div class="col-md-offset-1 col-md-4 col-xs-12 ">
-                    <img src="img/swiss_knife.png" alt="" class="img-responsive">
+            <div class="row">
+                <div class="knife col-xs-12 col-sm-6">
+                    <img src="img/swiss_knife.png" alt="" class="img-responsive vertical-align">
                 </div>
-                <div class="col-md-6 col-xs-12 ">
+                <div class="text col-xs-12 col-sm-6">
+                    <div class="vertical-align">
                     <h1>Saúl Quintero</h1>
-                    <h4>SysAdmin & Web Developer orientado a soluciones.</h4>
-                    <a href="#saul"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>conoce más</a>
+                    <h3>Ingeniero en Informática</h3>
+                    <h4>SysAdmin & Full-Stack Web-Developer orientado a soluciones.</h4>
+                    <a href="#saul" class="btn btn-danger">Ir</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -107,6 +110,30 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			//nos desplazamos entre todos los divs
+			$('a.ancla').click(function(e){
+			e.preventDefault();
+		    enlace  = $(this).attr('href');
+		    $('html, body').animate({
+		        scrollTop: $(enlace).offset().top
+		    }, 1000);
+			});
+			//vamos al principio o al final de la página
+			$('a.arriba').click(function(e){
+			e.preventDefault();
+		    volver  = $(this).attr('href');
+		    $('html, body').animate({
+		        scrollTop: $(volver).offset().top
+		    }, 2000);
+			});
+			//pasando la cantidad de pixeles que queremos a scrollTop
+			$('.prueba').click(function(){
+				$('html, body').animate({scrollTop:100}, 2000); return false;
+			});
+		});
+		</script>
 </body>
 
 </html>
