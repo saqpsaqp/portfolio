@@ -1,0 +1,114 @@
+/* Saúl Quintero's Portfolio
+1. LAYOUT
+2. GENERIC ITEMS
+3. PARTS OF WEB
+4. LIST
+5. FORM
+6. ANIMATIONS
+
+COLORS:
+#30BCED BLUE - LINKS
+#303036 GRAY
+#FFFAFF WHITE
+#FC5130 ORANGE
+#050401 BLACK
+*/
+/* 1.----------- LAYOUT ---------------------*/
+header {	
+	min-height: 400px;
+}
+section {
+	padding-top: 50px;
+}
+
+.vertical-center {
+  min-height: 100%; 
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; 
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+  width: 100%;
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;
+}
+/* 2.----------- GENERIC ITEMS ---------------------*/
+body{
+	background-color: #FFFAFF;
+	font-family: 'Ubuntu', sans-serif;
+	color: #303036;
+	font-size: 14px;
+}
+h1,h2,h3,h4 {
+	font-weight: 100;
+	color: #FC5130;
+}
+h1{
+	color: #303036;
+}
+h2{
+
+}
+h3 {
+
+}
+h4{
+
+}
+a{
+	color: #30BCED;
+}
+a:hover, a:focus {
+	color: #30BCED;
+	text-decoration: none;
+	font-weight: bold;
+}
+.navbar-default {
+	background-color: rgba(5,4,1,.7);
+	border-color: transparent;
+}
+.navbar-default .navbar-brand {
+	padding: 5px;	
+}
+.navbar-default .navbar-nav li a {
+	color: #FFFAFF;
+}
+.navbar-default .navbar-nav li a:hover {
+	color: #FFFAFF;
+	background-color: #30BCED;
+}
+.navbar-default .navbar-nav li a:visited {
+	color: #FFFAFF;
+}
+
+#home a {
+	display: flex;
+	align-items: center;	
+	background-color: #FC5130;
+	height: 50px;
+	width: 150px;
+	text-align: center;
+}
+/* 3.----------- PARTS OF WEB ---------------------*/
+
+/* 4.----------- LIST ---------------------*/
+
+/* 5.----------- FORM ---------------------*/
+
+/* 6.----------- ANIMATIONS ---------------------*/
+.navbar-default .navbar-nav li a:hover {
+	-webkit-transition: linear 200ms;
+	-moz-transition: linear 200ms;
+	-ms-transition: linear 200ms;
+	-o-transition: linear 200ms;
+	transition: linear 200ms;
+}
