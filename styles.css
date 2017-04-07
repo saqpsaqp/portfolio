@@ -36,7 +36,8 @@ header #buttonHeader {
 }
 
 #saul{
-	height: 450px;
+	min-height: 400px;
+	padding-bottom: 50px;
 }
 
 #saul .text, #saul .image  {
