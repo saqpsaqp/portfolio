@@ -26,11 +26,11 @@
             </div>
             <div class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#saul">#Saúl</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#socials">Mis redes</a></li>
-                    <li><a href="#contact">Contáctame</a></li>
+                    <li><a href="#home" class="ancla">Inicio</a></li>
+                    <li><a href="#saul"  class="ancla">#Saúl</a></li>
+                    <li><a href="#projects"  class="ancla">Proyectos</a></li>
+                    <li><a href="#socials"  class="ancla">Mis redes</a></li>
+                    <li><a href="#contact"  class="ancla">Contáctame</a></li>
                     <li><a href="#">English</a></li>
                 </ul>
             </div>
@@ -47,7 +47,7 @@
                         <h1>Saúl Quintero</h1>
                         <h3>Ingeniero en Informática</h3>
                         <h4>SysAdmin & Full-Stack Web-Developer orientado a soluciones.</h4>
-                        <a id="buttonHeader" href="#saul" class="btn btn-danger">¿Quieres saber más?</a>
+                        <a id="buttonHeader" href="#saul" class="btn btn-danger ancla">¿Quieres saber más?</a>
                     </div>
                 </div>
             </div>
@@ -111,11 +111,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script type="text/javascript">
-        $(document).on("ready", function () {
-            window.alert("hola");
-            $("#buttonHeader").on("click", function () {
-                
-                $("html,body").animate({ scrollTop: $("#saul").offset().top }, 1500);
+        $(document).ready(function() {    
+            $('.ancla').click(function(){
+                var link = $(this);
+                var anchor  = link.attr('href');
+                $('html, body').stop().animate({
+                scrollTop: jQuery(anchor).offset().top
+                }, 500);
+                return false;
             });
         });
     </script>
