@@ -156,6 +156,32 @@ header a.btn:hover {
 	border-radius: 50%;
 }
 
+#projects img {
+	width: 80%;
+	margin: 0 auto;
+}
+#projects h3 {
+	text-align: center;
+}
+#projects h2 {
+	margin-bottom: 30px;
+}
+
+#projects a img {
+	-webkit-transition: all 0.6s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.6s ease; /* Firefox */
+  	-o-transition: all 0.6s ease; /* IE 9 */
+  	-ms-transition: all 0.6s ease; /* Opera */
+  	transition: all 0.6s ease;
+}
+
+#projects a:hover img  {
+	 -webkit-transform:scale(1.15); /* Safari and Chrome */
+    -moz-transform:scale(1.15); /* Firefox */
+    -ms-transform:scale(1.15); /* IE 9 */
+    -o-transform:scale(1.15); /* Opera */
+     transform:scale(1.15);
+}
 
 
 
