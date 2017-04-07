@@ -35,6 +35,23 @@ header #buttonHeader {
 	border-radius: 0px;
 }
 
+#saul{
+	height: 450px;
+}
+
+#saul .text, #saul .image  {
+	min-height: 300px;
+	height: 300px;
+}
+
+#saul .image .about {
+	max-height: 100%;
+}
+
+#saul .image  {
+	text-align: center;
+}
+
 .vertical-align {
 	position: relative;
 	top: 50%;
@@ -128,6 +145,17 @@ a:hover, a:focus {
 header a.btn:hover {
 	background-color: rgba(252,81,48,0.5); 
 }
+
+#saul{
+	background-color: #303036;
+	color: #FFFAFF;
+}
+
+#saul .image .about {
+	border-radius: 50%;
+}
+
+
 
 
 /* 3.----------- PARTS OF WEB ---------------------*/
