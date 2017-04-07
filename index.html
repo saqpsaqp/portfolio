@@ -27,11 +27,10 @@
             <div class="navbar-collapse collapse navbar-right">
                 <ul class="nav navbar-nav">
                     <li><a href="#home" class="ancla">Inicio</a></li>
-                    <li><a href="#saul"  class="ancla">#Saúl</a></li>
-                    <li><a href="#projects"  class="ancla">Proyectos</a></li>
-                    <li><a href="#socials"  class="ancla">Mis Redes</a></li>
-                    <li><a href="#contact"  class="ancla">Contáctame</a></li>
-                    <li><a href="#">English</a></li>
+                    <li><a href="#saul" class="ancla">#Saúl</a></li>
+                    <li><a href="#projects" class="ancla">Proyectos</a></li>
+                    <li><a href="#socials" class="ancla">Mis Redes</a></li>
+                    
                 </ul>
             </div>
         </div>
@@ -59,21 +58,20 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6 text">
                     <div class="vertical-align">
-                        <p>Ingeniero en Informática con amplia experiencia como
-                        SysAdmin tanto en ambientes bajo tecnología Microsoft (Active Directory)
-                        como en Servicios bajo GNU/Linux (web, mail, dns, proxy, entre otros), así como Gestión y Desarrollo de
-                        proyectos enmarcados en Seguridad de la Información y Telecomunicaciones.</p>
-                        <p>Por otra parte, hábil desarrollador <i>freelance</i> en diferentes tecnologías tanto en Front-End como en Back-End.
-                        Profesor Universitario en las áreas de tecnologías básicas de programación. 
-                        Ganador y organizador de la Competencia Nacional de Róbotica en diferentes ediciones, llevadas a cabo por las 
-                        principales universidades del país.</p>
-                        <p>Por último, lo más importante: Padre de familia, amante de la música latinoamericana, rock
-                           y Ejecutante de la Guitarra, Cuatro Venezolano y Bajo Eléctrico.</p>
-                           
+                        <p>Ingeniero en Informática con amplia experiencia como SysAdmin tanto en ambientes bajo tecnología
+                            Microsoft (Active Directory) como en Servicios bajo GNU/Linux (web, mail, dns, proxy, entre otros),
+                            así como Gestión y Desarrollo de proyectos enmarcados en Seguridad de la Información y Telecomunicaciones.</p>
+                        <p>Por otra parte, hábil desarrollador <i>freelance</i> en diferentes tecnologías tanto en Front-End
+                            como en Back-End. Profesor Universitario en las áreas de tecnologías básicas de programación.
+                            Ganador y organizador de la Competencia Nacional de Róbotica en diferentes ediciones, llevadas
+                            a cabo por las principales universidades del país.</p>
+                        <p>Por último, lo más importante: Padre de familia, amante de la música latinoamericana, rock y Ejecutante
+                            de la Guitarra, Cuatro Venezolano y Bajo Eléctrico.</p>
+
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 image">
-                    <img src="img/family.jpg" alt="" class="about vertical-align">                
+                    <img src="img/family.jpg" alt="" class="about vertical-align">
                 </div>
             </div>
         </div>
@@ -84,18 +82,21 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="https://www.servergeneral.com" target="_blank">
-                    <img src="img/www-sg.png" class="img-responsive" alt="">
-                    <h3>www.servergeneral.com</h3></a>
+                        <img src="img/www-sg.png" class="img-responsive" alt="">
+                        <h3>www.servergeneral.com</h3>
+                    </a>
                 </div>
                 <div class="col-md-4">
                     <a href="https://kms.servergeneral.com" target="_blank">
-                    <img src="img/kms-sg.png" class="img-responsive" alt="">
-                    <h3>kms.servergeneral.com</h3></a>
+                        <img src="img/kms-sg.png" class="img-responsive" alt="">
+                        <h3>kms.servergeneral.com</h3>
+                    </a>
                 </div>
                 <div class="col-md-4">
                     <a href="http://www.endanzatachira.org.ve" target="_blank">
-                    <img src="img/endanza.png" class="img-responsive" alt="">
-                    <h3>www.endanzatachira.org.ve</h3></a>
+                        <img src="img/endanza.png" class="img-responsive" alt="">
+                        <h3>www.endanzatachira.org.ve</h3>
+                    </a>
                 </div>
             </div>
 
@@ -107,15 +108,16 @@
             <div class="row">
                 <div class="vertical-align">
                     <a href="https://about.me/saqpsaqp" target="_black" class="text-center">https://about.me/saqpsaqp</a>
+                    <ul class="list-inline icons">
+                        <li><a href="https://github.com/saqpsaqp"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.youtube.com/c/saulquintero"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/saqpsaqp"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <div class="container">
-            <h2>Contáctame</h2>
-        </div>
-    </section>
+    
     <footer>
         <div class="container">
             <p class="text-center">Un sitio hecho con <i class="fa fa-coffee" aria-hidden="true"></i> y <i class="fa fa-music" aria-hidden="true"></i>                - Saúl Quintero 2017</p>
@@ -128,12 +130,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script type="text/javascript">
-        $(document).ready(function() {    
-            $('.ancla').click(function(){
+        $(document).ready(function () {
+            $('.ancla').click(function () {
                 var link = $(this);
-                var anchor  = link.attr('href');
+                var anchor = link.attr('href');
                 $('html, body').stop().animate({
-                scrollTop: jQuery(anchor).offset().top
+                    scrollTop: jQuery(anchor).offset().top
                 }, 500);
                 return false;
             });

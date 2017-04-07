@@ -220,6 +220,29 @@ header a.btn:hover {
 	color: #FFFAFF;
 }
 
+#socials i {
+	-webkit-transition: all 0.6s ease; /* Safari and Chrome */
+  	-moz-transition: all 0.6s ease; /* Firefox */
+  	-o-transition: all 0.6s ease; /* IE 9 */
+  	-ms-transition: all 0.6s ease; /* Opera */
+  	transition: all 0.6s ease;
+}
+
+#socials ul li {
+	margin-left: 30px;
+}
+
+#socials i:hover {
+	 -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+.english:hover {
+	color: #FC5130 !important;
+}
 
 
 /* 3.----------- PARTS OF WEB ---------------------*/
