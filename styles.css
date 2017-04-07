@@ -53,6 +53,20 @@ header #buttonHeader {
 	text-align: center;
 }
 
+#projects {
+	min-height: 400px;
+	padding-bottom: 50px;
+}
+
+#socials {
+	min-height: 400px;
+	padding-bottom: 50px;
+}
+
+#contact {
+	height: 90vh;
+}
+
 .vertical-align {
 	position: relative;
 	top: 50%;
@@ -84,7 +98,7 @@ section {
 		text-align: center;
 		margin: 0px auto;
 	}
-	.vertical-align {
+	header .vertical-align {
 		position: initial;
 		top: initial;
 		transform: initial;
@@ -181,6 +195,29 @@ header a.btn:hover {
     -ms-transform:scale(1.15); /* IE 9 */
     -o-transform:scale(1.15); /* Opera */
      transform:scale(1.15);
+}
+
+#socials {
+	background-color: #FC5130;
+}
+
+#socials h2 {
+	color: #FFFAFF;	
+}
+
+#socials .container {
+	min-height: 300px;
+}
+#socials .row {
+	height: 300px;
+	text-align: center;
+}
+
+#socials a {
+	margin-top: 100px;
+	font-size: 3em;
+	font-weight: bolder;
+	color: #FFFAFF;
 }
 
 
