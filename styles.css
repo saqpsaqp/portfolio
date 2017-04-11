@@ -41,9 +41,9 @@ header #buttonHeader {
 	padding-bottom: 50px;
 }
 
-#saul .text, #saul .image  {
+#saul .text  {
 	min-height: 300px;
-	height: 300px;
+	
 }
 
 #saul .image .about {
@@ -251,6 +251,22 @@ header a.btn:hover {
     -ms-transform:scale(1.25); /* IE 9 */
     -o-transform:scale(1.25); /* Opera */
      transform:scale(1.25);
+}
+
+@media all and (max-width: 767px){
+	#socials a.aboutme {
+		font-size: 2em;	
+	}
+}
+
+@media all and (max-width: 340px){
+	#projects h3 {
+		font-size: 1.5em;	
+	}
+
+	#socials a.aboutme {
+		font-size: 1.5em;	
+	}
 }
 
 
