@@ -257,6 +257,9 @@ header a.btn:hover {
 	#socials a.aboutme {
 		font-size: 2em;	
 	}
+	header #buttonHeader {
+		margin-bottom: 15px;
+	}
 }
 
 @media all and (max-width: 340px){
